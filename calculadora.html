@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./on_off.css" />
+    <link rel="stylesheet" href="./results.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Silkscreen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>calculator</title>
+    <link rel="icon" href="./svg/icons8-calculadora-48.png" />
+  </head>
+  <body>
+    <div class="calculator-content">
+      <div class="calculator">
+        <div class="title-space">
+          <p>DGM</p>
+        </div>
+        <div class="screen">
+          <div class="screenText" id="writeScreen">
+            <p class="screenMov"></p>
+          </div>
+        </div>
+        <div class="space">
+          <label class="switch">
+            <input class="toggle" type="checkbox" id="switch" />
+            <span class="slider"></span>
+            <span class="card-side"></span>
+          </label>
+        </div>
+        <button value="7" id="seven">7</button>
+        <button value="8" id="eight">8</button>
+        <button value="9" id="nine">9</button>
+        <button id="exp">^2</button>
+        <button value="sqr" id="sqr">√</button>
+        <button value="4" id="four">4</button>
+        <button value="5" id="five">5</button>
+        <button value="6" id="six">6</button>
+        <button value="*" id="mul">X</button>
+        <button value="/" id="div" class="div">
+          <img src="./svg/icons8-dividir-30.png" alt="" height="15px" />
+        </button>
+        <button value="1" id="one">1</button>
+        <button value="2" id="two">2</button>
+        <button value="3" id="three">3</button>
+        <button value="-" id="subs">
+          <img src="./svg/icons8-menos-30 (1).png" alt="" />
+        </button>
+        <button value="0" id="zero">0</button>
+        <button value="." id="dot">.</button>
+        <button value="c" id="clear">C</button>
+        <button value="+" class="sum" id="sum">
+          <img src="./svg/icons8-más-30.png" alt="" />
+        </button>
+        <button value="=" id="res">
+          <img src="./svg/icons8-signo-igual-30.png" alt="" />
+        </button>
+      </div>
+      <div class="results">
+        <div class="results-title"> 
+          <h6>Results</h1>
+          <button class="delete deleteall" id="deleteAll">Delete all</button>
+        </div>
+        <ul class="results-list" id="results-list">
+          <!-- <li>
+              <div>
+                <p class="result-operation">15+3</p>
+                <p>18</p>
+              </div>
+                <button class="delete">Delete</button>
+            </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="./calculadora.js"></script>
+  </body>
+</html>
